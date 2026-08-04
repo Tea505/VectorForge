@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Forge — Game Development Studio</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="Main.css" rel="stylesheet"> 
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="assets/logo.png" alt="Vector Forge logo">
+      <span>VECTOR FORGE</span>
+    </div>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="rail" id="rail">
+  <div class="rail-track"></div>
+  <div class="rail-fill" id="railFill"></div>
+  <div class="rail-node" data-target="home"><span class="rail-label">P0 — HOME</span></div>
+  <div class="rail-node" data-target="projects"><span class="rail-label">P1 — PROJECTS</span></div>
+  <div class="rail-node" data-target="studio"><span class="rail-label">P2 — STUDIO</span></div>
+  <div class="rail-node" data-target="contact"><span class="rail-label">P3 — CONTACT</span></div>
+</div>
+
+<main>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <img src="assets/logo.png" alt="Vector Forge" class="hero-logo">
+      <h1>VECTOR<br>FORGE</h1>
+      <p class="hero-sub">
+        An independent game development studio. We plot every mechanic like a
+        coordinate and forge it under pressure until it ships —
+        <strong>no filler, no shortcuts.</strong>
+      </p>
+      <div class="btn-row">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap shifted">
+      <div class="sec-head">
+        <div class="eyebrow">Projects</div>
+        <h2>What we're building</h2>
+        <p>Every title starts as a sketched vector and gets hammered into shape through iteration. Here's what's currently on the anvil.</p>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- PROJECT CARD 1 — flip .steam-btn to "live" and set a real href once the store page exists -->
+        <div class="card">
+          <div class="card-art astra-art" role="img" aria-label="Project ASTRA logo"></div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Project ASTRA</h3>
+              <span class="tag dev">In Development</span>
+            </div>
+            <p class="desc">A first-person story shooter set aboard a research outpost pulled into orbit around a black hole. Fight to hold the station together while piecing together what really happened to its crew — every choice pulls you closer to the truth, and closer to the event horizon.</p>
+            <a href="#" class="steam-btn" aria-disabled="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6"/></svg>
+              Steam page coming soon
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <!-- <div class="card">
+          <div class="card-art"><span class="placeholder-mark">SCREENSHOT / KEY ART</span></div>
+          <div class="card-body">
+            <div class="card-top">
+              <h3>Untitled Project 02</h3>
+              <span class="tag">Prototyping</span>
+            </div>
+            <p class="desc">Early-stage concept. Add a screenshot and description here as soon as there's something worth showing.</p>
+            <a href="#" class="steam-btn" aria-disabled="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6"/></svg>
+              Steam page coming soon
+            </a>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <section id="studio">
+    <div class="wrap shifted">
+      <div class="studio-grid">
+        <div>
+          <div class="eyebrow">Studio</div>
+          <h2 style="font-size:clamp(30px,4vw,42px); margin-bottom:24px;">Precision first. Then pressure.</h2>
+          <div class="studio-copy">
+            <p><strong>Vector Forge</strong> is a small, independent studio built around one idea: good game design is drawn with intent before it's built with force. We plan every system like a vector — deliberate direction, clean endpoints — then forge it through playtesting until it holds up.</p>
+            <p>No bloated roadmaps, no vague promises. Just games we'd want to play ourselves, built one clean pass at a time.</p>
+          </div>
+        </div>
+
+        <div class="pipeline">
+          <div class="pipeline-item">
+            <div class="pipeline-id">01</div>
+            <div class="pipeline-text">
+              <h4>Sketch</h4>
+              <p>Core mechanic and hook, tested on paper before a line of code.</p>
+            </div>
+          </div>
+          <div class="pipeline-item">
+            <div class="pipeline-id">02</div>
+            <div class="pipeline-text">
+              <h4>Prototype</h4>
+              <p>Playable proof that the idea actually holds up.</p>
+            </div>
+          </div>
+          <div class="pipeline-item">
+            <div class="pipeline-id">03</div>
+            <div class="pipeline-text">
+              <h4>Forge</h4>
+              <p>Full production — art, systems, and content, under real iteration pressure.</p>
+            </div>
+          </div>
+          <div class="pipeline-item">
+            <div class="pipeline-id">04</div>
+            <div class="pipeline-text">
+              <h4>Ship</h4>
+              <p>Launch on Steam, then support it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap shifted">
+      <div class="contact-box">
+        <div>
+          <h2>Let's build something.</h2>
+          <p>Questions, feedback, or just want to follow along with development — reach out.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:hello@vectorforge.studio">hello@vectorforge.studio</a>
+          <a href="#">twitter.com/vectorforge</a>
+          <a href="#">vectorforge.itch.io</a>
+          <a href="#">discord.gg/vectorforge</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap shifted footer-row">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Vector Forge logo">
+      <span>VECTOR FORGE</span>
+    </div>
+    <p>&copy; 2026 Vector Forge. All rights reserved.</p>
+  </div>
+</footer>
+    <script src="Script.js"> </script>
+</body>
+</html>
